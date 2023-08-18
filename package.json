@@ -1,0 +1,57 @@
+{
+  "name": "six-cities",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Личный проект «Шесть городов» от HTML Academy",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server",
+    "eslint": "eslint --ext .jsx --ext .js src/",
+    "test": "npm run eslint && npm run test.jest",
+    "test.jest": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-react": "7.12.10",
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.5",
+    "@testing-library/react-hooks": "5.1.0",
+    "@testing-library/user-event": "12.8.1",
+    "axios-mock-adapter": "1.19.0",
+    "babel-loader": "8.2.2",
+    "eslint": "7.18.0",
+    "eslint-config-htmlacademy": "2.1.0",
+    "eslint-plugin-react": "7.22.0",
+    "jest": "26.6.3",
+    "redux-mock-store": "1.5.4",
+    "webpack": "4.46.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.2",
+    "file-loader": "6.2.0",
+    "css-loader": "5.0.2",
+    "style-loader": "2.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "1.5.0",
+    "axios": "0.21.1",
+    "history": "4.10.1",
+    "prop-types": "15.7.2",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-router-dom": "5.2.0",
+    "leaflet": "1.7.1",
+    "react-redux": "7.2.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/src/style-mock.js"
+    },
+    "setupFilesAfterEnv": [
+      "./setup-tests.js"
+    ]
+  }
+}
